@@ -7,7 +7,7 @@ while True:
     except ValueError:
         continue
     if n > 0:
-        rand = randint(1,n)
+        rand = randint(1, n)
         while True:
             try:
                 guess = int(input("Guess: "))

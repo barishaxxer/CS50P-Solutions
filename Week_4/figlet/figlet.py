@@ -4,7 +4,7 @@ import random
 
 parser = argparse.ArgumentParser()
 
-parser.add_argument("-f","--font",help="specify font")
+parser.add_argument("-f", "--font", help="specify font")
 
 args = parser.parse_args()
 fonts = pyfiglet.FigletFont.getFonts()
@@ -22,5 +22,3 @@ elif args.font != None and args.font in fonts:
     print(x.renderText(prompt))
 else:
     exit(1)
-
-

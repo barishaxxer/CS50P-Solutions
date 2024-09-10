@@ -25,5 +25,3 @@ class Jar:
     @property
     def size(self):
         return self.cookie_number
-
-

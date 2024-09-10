@@ -1,3 +1,3 @@
-var = input().replace(" ","...")
+var = input().replace(" ", "...")
 
 print(var)

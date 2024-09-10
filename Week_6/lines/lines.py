@@ -14,6 +14,7 @@ def is_valid():
     elif not (sys.argv[1].endswith(".py")):
         sys.exit("not a python file")
 
+
 def lines_of_code(file):
     x = 0
     try:
@@ -26,7 +27,4 @@ def lines_of_code(file):
     return x
 
 
-
-
 main()
-

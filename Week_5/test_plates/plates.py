@@ -10,7 +10,7 @@ def is_valid(s):
     if 2 <= len(s) <= 6 and s.isalnum() and s[:2].isalpha():
         count = False
         for i in s:
-            if i.isdigit() :
+            if i.isdigit():
                 if count == False and i == "0":
                     return False
                 count = True
@@ -20,7 +20,6 @@ def is_valid(s):
 
     else:
         return False
-
 
 
 if __name__ == "__main__":

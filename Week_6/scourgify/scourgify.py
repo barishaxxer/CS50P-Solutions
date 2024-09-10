@@ -15,7 +15,9 @@ def main():
 
                 writer.writeheader()
                 for row in reader:
-                    holder["last"],holder["first"] = row["name"].replace(" ","").split(",")
+                    holder["last"], holder["first"] = (
+                        row["name"].replace(" ", "").split(",")
+                    )
                     holder["house"] = row["house"]
 
                     writer.writerow(holder)

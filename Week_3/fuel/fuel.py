@@ -1,5 +1,5 @@
 def main():
-     while True:
+    while True:
         fr = input("Fraction: ").strip()
         perc = percentage(fr)
         if perc is not None:
@@ -9,24 +9,19 @@ def main():
             elif 99 <= perc <= 100:
                 print("F")
                 break
-            elif 1< perc < 100:
-                print(round(perc),"%",sep="")
+            elif 1 < perc < 100:
+                print(round(perc), "%", sep="")
                 break
         else:
             pass
 
 
-
 def percentage(fraction):
     try:
-        x,y = fraction.split("/")
+        x, y = fraction.split("/")
         return (int(x) / int(y)) * 100
-    except (ZeroDivisionError,ValueError):
+    except (ZeroDivisionError, ValueError):
         return
-
-
-
-
 
 
 main()

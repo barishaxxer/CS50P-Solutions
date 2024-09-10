@@ -7,9 +7,8 @@ def main():
 
 def count(s):
     pattern = r"(\bum[.?,!]*\b)"
-    match = re.findall(pattern,s,re.IGNORECASE)
+    match = re.findall(pattern, s, re.IGNORECASE)
     return len(match)
-
 
 
 if __name__ == "__main__":
